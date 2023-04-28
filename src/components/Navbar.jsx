@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 function Navbar() {
@@ -32,23 +33,24 @@ function Navbar() {
           data-visible="false"
           class="primary-navigation underline-indicators flex"
         >
-          <li class="active">
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
+        <ul>
+          <li className="active">
+
               <span aria-hidden="true">00</span>Home
             </a>
           </li>
           <li>
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
+            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="#">
               <span aria-hidden="true">01</span>Destination
             </a>
           </li>
           <li>
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
+            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="#">
               <span aria-hidden="true">02</span>Crew
             </a>
           </li>
           <li>
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
+            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="#">
               <span aria-hidden="true">03</span>Techn
             </a>
           </li>
