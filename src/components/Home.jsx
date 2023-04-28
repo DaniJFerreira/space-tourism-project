@@ -15,7 +15,7 @@ return (
       </div>
  
       <div>
-      <a href="#" className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
+      <a href="/Destination" className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
       </div>
 
     </main>
