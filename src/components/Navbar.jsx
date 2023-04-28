@@ -45,7 +45,6 @@
 // export default Navbar;
 
 import React, { useState } from 'react';
-import "../index.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,22 +79,22 @@ function Navbar() {
       >
         <ul>
           <li className="active">
-            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="/">
+            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="#">
               <span aria-hidden="true">00</span>Home
             </a>
           </li>
           <li>
-            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="/Destination">
+            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="#">
               <span aria-hidden="true">01</span>Destination
             </a>
           </li>
           <li>
-            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="/Crew">
+            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="#">
               <span aria-hidden="true">02</span>Crew
             </a>
           </li>
           <li>
-            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="/Techn">
+            <a className="ff-sans cond uppercase text-white letter-spacing-2" href="#">
               <span aria-hidden="true">03</span>Techn
             </a>
           </li>
