@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const handleClick = () => {
@@ -18,42 +19,54 @@ function Navbar() {
 
   return (
     <header className="primary-header flex">
-      <div>
-        <img src="./assets/shared/logo.svg" alt="space tourism logo" className="logo"></img>
-      </div>
-      <button class="mobile-nav-toggle" aria-expanded="false" onClick={handleClick}>
-        <span class="sr-only" aria-expanded="false">
-          Menu
-        </span>
-      </button>
-      <nav>
-        <ul
-          id="primary-navigation"
-          data-visible="false"
-          class="primary-navigation underline-indicators flex"
-        >
-          <li class="active">
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
-              <span aria-hidden="true">00</span>Home
-            </a>
-          </li>
-          <li>
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
-              <span aria-hidden="true">01</span>Destination
-            </a>
-          </li>
-          <li>
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
-              <span aria-hidden="true">02</span>Crew
-            </a>
-          </li>
-          <li>
-            <a class="ff-sans cond uppercase text-white letter-spacing-2" href="#">
-              <span aria-hidden="true">03</span>Techn
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <div>
+          <img src="./assets/shared/logo.svg" alt="space tourism logo" className="logo"></img>
+        </div>
+          <button className="mobile-nav-toggle" aria-expanded="false" onClick={handleClick}>
+            <span className="sr-only" aria-expanded="false">
+              Menu
+            </span>
+          </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            className="primary-navigation underline-indicators flex"
+          >
+            <li>
+              <Link
+                to="space-tourism-project/"
+                className="ff-sans cond uppercase text-white letter-spacing-2"
+              >
+                <span aria-hidden="true">00</span>Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="space-tourism-project/Destination"
+                className="ff-sans cond uppercase text-white letter-spacing-2"
+              >
+                <span aria-hidden="true">01</span>Destination
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="space-tourism-project/Crew"
+                className="ff-sans cond uppercase text-white letter-spacing-2"
+              >
+                <span aria-hidden="true">02</span>Crew
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="space-tourism-project/Techn"
+                className="ff-sans cond uppercase text-white letter-spacing-2"
+              >
+                <span aria-hidden="true">03</span>Technology
+              </Link>
+            </li>
+          </ul>
+        </nav>
     </header>
   );
 }

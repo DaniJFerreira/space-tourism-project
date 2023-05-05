@@ -3,6 +3,7 @@ import React from 'react';
 function Home(){
 
 return (
+  <body className="home">
     <main id="main" className="grid-container grid-container--home">
       <div>
         <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
@@ -18,6 +19,7 @@ return (
       </div>
 
     </main>
+  </body>
   );
 }
 
