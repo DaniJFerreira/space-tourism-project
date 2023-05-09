@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home(){
 
@@ -15,7 +16,9 @@ return (
       </div>
  
       <div>
-      <a href="/Destination" className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
+      <Link
+          to="/space-tourism-project/Destination"
+          className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</Link>
       </div>
 
     </main>
