@@ -66,7 +66,7 @@ function Navbar() {
             </li>
             <li className={activeLink === 3 ? 'active' : ''} >
               <Link
-                to="space-tourism-project/Techn"
+                to="space-tourism-project/Technology"
                 className="ff-sans cond uppercase text-white letter-spacing-2" onClick={() => handleLinkClick(3)}
               >
                 <span aria-hidden="true">03</span>Technology

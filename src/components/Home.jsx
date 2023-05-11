@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 function Home(){
 
 return (
-  <body className="home">
+  <body className='home'>
     <main id="main" className="grid-container grid-container--home">
-      <div>
+      <div className='homeContent'>
         <h1 className="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">So, you want to travel to
         <span className="d-block fs-900 ff-serif text-white">Space</span></h1>
   
@@ -22,7 +22,7 @@ return (
       </div>
 
     </main>
-  </body>
+ </body>
   );
 }
 
