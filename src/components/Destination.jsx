@@ -97,25 +97,28 @@ return (
       <main id="main" className="grid-container grid-container--destination flow">
         <h1 className="numbered-title"><span aria-hidden="true">01</span> Pick your destination</h1>
 
-<picture id="moon-image">
+    <picture id="moon-image">
       <source srcSet="../assets/destination/image-moon.webp" type="image/webp"/>
       <img src="assets/destination/image-moon.png" alt="the moon"/>
     </picture>
+    
     <picture hidden id="mars-image">
       <source srcSet="../assets/destination/image-mars.webp" type="image/webp"/>
       <img src="assets/destination/image-mars.png" alt="the planet mars"/>
     </picture>
+
     <picture hidden id="europa-image">
       <source srcSet="../assets/destination/image-europa.webp" type="image/webp"/>
       <img src="assets/destination/image-europa.png" alt="the planet europa"/>
     </picture>
+
     <picture hidden id="titan-image">
       <source srcSet="../assets/destination/image-titan.webp" type="image/webp"/>
       <img src="assets/destination/image-titan.png" alt="the moon titan"/>
     </picture>
     
    
-        <div className="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+    <div className="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
         <button aria-selected="true" role="tab" aria-controls="moon-tab" className="uppercase ff-sans-cond text-accent letter-spacing-2" tabIndex="0" data-image="moon-image">Moon</button>
         <button aria-selected="false" role="tab" aria-controls="mars-tab" className="uppercase ff-sans-cond text-accent letter-spacing-2" tabIndex="-1" data-image="mars-image">Mars</button>
         <button aria-selected="false" role="tab" aria-controls="europa-tab" className="uppercase ff-sans-cond text-accent letter-spacing-2" tabIndex="-1" data-image="europa-image">Europa</button>
@@ -187,8 +190,8 @@ return (
       <h2 className="fs-800 uppercase ff-serif">Titan</h2>
 
       <p>The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.</p>
+       is a home away from home (just a few hundred degrees colder!). As a 
+       bonus, you get striking views of the Rings of Saturn.</p>
       
       <div className="destination-meta flex">
         <div>
@@ -202,7 +205,7 @@ return (
       </div>
     </article>
       </main>
-    </body>
+  </body>
   )
 }
 
