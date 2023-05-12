@@ -17,7 +17,7 @@ function Home(){
    
         <div>
           <Link
-            to="/space-tourism-project/Destination"
+            to="/Destination"
             className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</Link>
         </div>
   
