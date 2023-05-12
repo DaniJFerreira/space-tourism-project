@@ -5,9 +5,11 @@ function Technology() {
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
 
-  function changeTabPanel(index) {
+  const changeTabPanel = (index) =>{
     setSelectedTabIndex(index);
   }
+
+  // const media = "max-width: 35rem";
 
   return (
     <body className="technology">
@@ -16,7 +18,7 @@ function Technology() {
           <span aria-hidden="true">03</span>Space launch 101
         </h1>
 
-        <div className="dot-list dot-numbers flex" role="tablist" aria-label="technology list">
+        <div className="dot-list dot-numbers" role="tablist" aria-label="technology list">
           {data.technology.map((technology, index) => (
             <button
               key={technology.name}
@@ -47,7 +49,7 @@ function Technology() {
             </header>
             <p>{technology.description}</p>
           </article>
-        ))}
+          ))}
 
         {data.technology.map((technology, index) => (
           <picture
@@ -55,6 +57,7 @@ function Technology() {
             id={technology.name}
             hidden={index !== selectedTabIndex}
           >
+       <source media="(max-width: 50rem)" srcSet={technology.images.landscape} />
             <img src={technology.images.portrait} alt={technology.name} />
           </picture>
         ))}
