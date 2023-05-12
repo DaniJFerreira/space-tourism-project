@@ -42,7 +42,7 @@ function Navbar() {
           >
             <li className={activeLink === 0 ? 'active' : ''}>
               <Link
-                to="space-tourism-project/"
+                to="/"
                 className="ff-sans cond uppercase text-white letter-spacing-2" onClick={() => handleLinkClick(0)}
               >
                 <span aria-hidden="true">00</span>Home
@@ -50,7 +50,7 @@ function Navbar() {
             </li>
             <li className={activeLink === 1 ? 'active' : ''}>
               <Link
-                to="space-tourism-project/Destination"
+                to="/Destination"
                 className="ff-sans cond uppercase text-white letter-spacing-2" onClick={() => handleLinkClick(1)}
               >
                 <span aria-hidden="true">01</span>Destination
@@ -58,7 +58,7 @@ function Navbar() {
             </li>
             <li className={activeLink === 2 ? 'active' : ''}>
               <Link
-                to="space-tourism-project/Crew"
+                to="/Crew"
                 className="ff-sans cond uppercase text-white letter-spacing-2" onClick={() => handleLinkClick(2)}
               >
                 <span aria-hidden="true">02</span>Crew
@@ -66,7 +66,7 @@ function Navbar() {
             </li>
             <li className={activeLink === 3 ? 'active' : ''} >
               <Link
-                to="space-tourism-project/Technology"
+                to="/Technology"
                 className="ff-sans cond uppercase text-white letter-spacing-2" onClick={() => handleLinkClick(3)}
               >
                 <span aria-hidden="true">03</span>Technology
