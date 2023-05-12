@@ -8,9 +8,9 @@ import Technology from './components/Technology';
 
 function App() {
   return (
-    <Router>
+    <Router >
         <Navbar/>
-          <Routes basename ="space-tourism-project">
+          <Routes basename ="/space-tourism-project">
            <Route path="space-tourism-project/" element={<Home />} />
            <Route path="space-tourism-project/Destination" element={<Destination />} />
            <Route path="space-tourism-project/Crew" element={<Crew />} />
